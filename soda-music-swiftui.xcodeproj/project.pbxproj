@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F45DE162B98340300AE2617 /* soda_music_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE152B98340300AE2617 /* soda_music_swiftuiApp.swift */; };
+		1F45DE182B98340300AE2617 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE172B98340300AE2617 /* ContentView.swift */; };
+		1F45DE1A2B98340400AE2617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE192B98340400AE2617 /* Assets.xcassets */; };
+		1F45DE1D2B98340400AE2617 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE1C2B98340400AE2617 /* Preview Assets.xcassets */; };
+		1F45DE242B986DD500AE2617 /* Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE232B986DD500AE2617 /* Tabbar.swift */; };
+		1F55CFAE2B9888E8002B8460 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F55CFAD2B9888E8002B8460 /* MeView.swift */; };
+		1F55CFB12B988963002B8460 /* PhoneLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F55CFB02B988963002B8460 /* PhoneLoginView.swift */; };
+		1F7AC7DE2B98C82E00674104 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7AC7DD2B98C82E00674104 /* LoginView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F45DE122B98340300AE2617 /* soda-music-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "soda-music-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F45DE152B98340300AE2617 /* soda_music_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soda_music_swiftuiApp.swift; sourceTree = "<group>"; };
+		1F45DE172B98340300AE2617 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1F45DE192B98340400AE2617 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F45DE1C2B98340400AE2617 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1F45DE232B986DD500AE2617 /* Tabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar.swift; sourceTree = "<group>"; };
+		1F55CFAD2B9888E8002B8460 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		1F55CFB02B988963002B8460 /* PhoneLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneLoginView.swift; sourceTree = "<group>"; };
+		1F7AC7DD2B98C82E00674104 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F45DE0F2B98340300AE2617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F45DE092B98340300AE2617 = {
+			isa = PBXGroup;
+			children = (
+				1F45DE142B98340300AE2617 /* soda-music-swiftui */,
+				1F45DE132B98340300AE2617 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F45DE132B98340300AE2617 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F45DE122B98340300AE2617 /* soda-music-swiftui.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F45DE142B98340300AE2617 /* soda-music-swiftui */ = {
+			isa = PBXGroup;
+			children = (
+				1F45DE252B986DE000AE2617 /* View */,
+				1F45DE152B98340300AE2617 /* soda_music_swiftuiApp.swift */,
+				1F45DE172B98340300AE2617 /* ContentView.swift */,
+				1F45DE192B98340400AE2617 /* Assets.xcassets */,
+				1F45DE1B2B98340400AE2617 /* Preview Content */,
+			);
+			path = "soda-music-swiftui";
+			sourceTree = "<group>";
+		};
+		1F45DE1B2B98340400AE2617 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1F45DE1C2B98340400AE2617 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1F45DE252B986DE000AE2617 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1F55CFAF2B988948002B8460 /* login */,
+				1F55CFAC2B9888B9002B8460 /* me */,
+				1F64B5652B9874870075EA46 /* compoment */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1F55CFAC2B9888B9002B8460 /* me */ = {
+			isa = PBXGroup;
+			children = (
+				1F55CFAD2B9888E8002B8460 /* MeView.swift */,
+			);
+			path = me;
+			sourceTree = "<group>";
+		};
+		1F55CFAF2B988948002B8460 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				1F55CFB02B988963002B8460 /* PhoneLoginView.swift */,
+				1F7AC7DD2B98C82E00674104 /* LoginView.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		1F64B5652B9874870075EA46 /* compoment */ = {
+			isa = PBXGroup;
+			children = (
+				1F45DE232B986DD500AE2617 /* Tabbar.swift */,
+			);
+			path = compoment;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F45DE112B98340300AE2617 /* soda-music-swiftui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F45DE202B98340400AE2617 /* Build configuration list for PBXNativeTarget "soda-music-swiftui" */;
+			buildPhases = (
+				1F45DE0E2B98340300AE2617 /* Sources */,
+				1F45DE0F2B98340300AE2617 /* Frameworks */,
+				1F45DE102B98340300AE2617 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "soda-music-swiftui";
+			productName = "soda-music-swiftui";
+			productReference = 1F45DE122B98340300AE2617 /* soda-music-swiftui.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F45DE0A2B98340300AE2617 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					1F45DE112B98340300AE2617 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 1F45DE0D2B98340300AE2617 /* Build configuration list for PBXProject "soda-music-swiftui" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F45DE092B98340300AE2617;
+			productRefGroup = 1F45DE132B98340300AE2617 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F45DE112B98340300AE2617 /* soda-music-swiftui */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F45DE102B98340300AE2617 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F45DE1D2B98340400AE2617 /* Preview Assets.xcassets in Resources */,
+				1F45DE1A2B98340400AE2617 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F45DE0E2B98340300AE2617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7AC7DE2B98C82E00674104 /* LoginView.swift in Sources */,
+				1F55CFB12B988963002B8460 /* PhoneLoginView.swift in Sources */,
+				1F55CFAE2B9888E8002B8460 /* MeView.swift in Sources */,
+				1F45DE242B986DD500AE2617 /* Tabbar.swift in Sources */,
+				1F45DE182B98340300AE2617 /* ContentView.swift in Sources */,
+				1F45DE162B98340300AE2617 /* soda_music_swiftuiApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1F45DE1E2B98340400AE2617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F45DE1F2B98340400AE2617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F45DE212B98340400AE2617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"soda-music-swiftui/Preview Content\"";
+				DEVELOPMENT_TEAM = Q57R8D23YS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.GnaixEuy.soda-music-swiftui";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F45DE222B98340400AE2617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"soda-music-swiftui/Preview Content\"";
+				DEVELOPMENT_TEAM = Q57R8D23YS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.GnaixEuy.soda-music-swiftui";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F45DE0D2B98340300AE2617 /* Build configuration list for PBXProject "soda-music-swiftui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F45DE1E2B98340400AE2617 /* Debug */,
+				1F45DE1F2B98340400AE2617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F45DE202B98340400AE2617 /* Build configuration list for PBXNativeTarget "soda-music-swiftui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F45DE212B98340400AE2617 /* Debug */,
+				1F45DE222B98340400AE2617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F45DE0A2B98340300AE2617 /* Project object */;
+}
