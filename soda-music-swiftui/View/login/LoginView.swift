@@ -33,8 +33,7 @@ struct LoginView: View {
             }
 
             Spacer()
-
-            Image(systemName: "music.note")
+            Image("LoginLogo")
                 .font(.largeTitle)
                 .frame(width: 300, height: 300)
 

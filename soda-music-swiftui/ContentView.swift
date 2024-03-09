@@ -9,30 +9,45 @@ import SwiftUI
 
 struct ContentView: View {
     @State var isLoginUser: Bool = false
+    @Binding var selectPageView: SelectPageEnum
 
     var body: some View {
         VStack {
-            VStack {
-                Button(action: {
-                    self.isLoginUser.toggle()
-                }, label: {
-                    Image(systemName: "music.note")
-                        .imageScale(.large)
-                        .foregroundStyle(.tint)
-                    Text("Hello, Soda!")
-                })
+//            VStack {
+//                Button(action: {
+//                    self.isLoginUser.toggle()
+//                }, label: {
+//                    Image(systemName: "music.note")
+//                        .imageScale(.large)
+//                        .foregroundColor(.red)
+//                        .symbolRenderingMode(.multicolor)
+//                    Text("Hello, Soda!")
+//
+//                })
+//            }
+//            .foregroundColor(.red)
+//            .padding()
+
+            switch selectPageView {
+            case SelectPageEnum.home:
+                EmptyView()
+            case SelectPageEnum.find:
+                EmptyView()
+            case SelectPageEnum.account:
+                AccountView()
             }
-            .padding()
 
             Spacer()
 
             Tabbar()
-        }.sheet(isPresented: self.$isLoginUser, content: {
+        }
+        .background(Color("AccentColor"))
+        .sheet(isPresented: self.$isLoginUser, content: {
             LoginView(isLoginUser: $isLoginUser)
         })
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(selectPageView: .constant(SelectPageEnum.account))
 }

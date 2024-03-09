@@ -12,9 +12,10 @@
 		1F45DE1A2B98340400AE2617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE192B98340400AE2617 /* Assets.xcassets */; };
 		1F45DE1D2B98340400AE2617 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE1C2B98340400AE2617 /* Preview Assets.xcassets */; };
 		1F45DE242B986DD500AE2617 /* Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE232B986DD500AE2617 /* Tabbar.swift */; };
-		1F55CFAE2B9888E8002B8460 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F55CFAD2B9888E8002B8460 /* MeView.swift */; };
+		1F55CFAE2B9888E8002B8460 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F55CFAD2B9888E8002B8460 /* AccountView.swift */; };
 		1F55CFB12B988963002B8460 /* PhoneLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F55CFB02B988963002B8460 /* PhoneLoginView.swift */; };
 		1F7AC7DE2B98C82E00674104 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7AC7DD2B98C82E00674104 /* LoginView.swift */; };
+		1F7BE2482B9CC01600432307 /* VerificationCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7BE2472B9CC01600432307 /* VerificationCodeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,9 +25,10 @@
 		1F45DE192B98340400AE2617 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F45DE1C2B98340400AE2617 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1F45DE232B986DD500AE2617 /* Tabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar.swift; sourceTree = "<group>"; };
-		1F55CFAD2B9888E8002B8460 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		1F55CFAD2B9888E8002B8460 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		1F55CFB02B988963002B8460 /* PhoneLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneLoginView.swift; sourceTree = "<group>"; };
 		1F7AC7DD2B98C82E00674104 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1F7BE2472B9CC01600432307 /* VerificationCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationCodeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,18 +82,18 @@
 			isa = PBXGroup;
 			children = (
 				1F55CFAF2B988948002B8460 /* login */,
-				1F55CFAC2B9888B9002B8460 /* me */,
+				1F55CFAC2B9888B9002B8460 /* Account */,
 				1F64B5652B9874870075EA46 /* compoment */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		1F55CFAC2B9888B9002B8460 /* me */ = {
+		1F55CFAC2B9888B9002B8460 /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				1F55CFAD2B9888E8002B8460 /* MeView.swift */,
+				1F55CFAD2B9888E8002B8460 /* AccountView.swift */,
 			);
-			path = me;
+			path = Account;
 			sourceTree = "<group>";
 		};
 		1F55CFAF2B988948002B8460 /* login */ = {
@@ -99,6 +101,7 @@
 			children = (
 				1F55CFB02B988963002B8460 /* PhoneLoginView.swift */,
 				1F7AC7DD2B98C82E00674104 /* LoginView.swift */,
+				1F7BE2472B9CC01600432307 /* VerificationCodeView.swift */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -181,9 +184,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F7BE2482B9CC01600432307 /* VerificationCodeView.swift in Sources */,
 				1F7AC7DE2B98C82E00674104 /* LoginView.swift in Sources */,
 				1F55CFB12B988963002B8460 /* PhoneLoginView.swift in Sources */,
-				1F55CFAE2B9888E8002B8460 /* MeView.swift in Sources */,
+				1F55CFAE2B9888E8002B8460 /* AccountView.swift in Sources */,
 				1F45DE242B986DD500AE2617 /* Tabbar.swift in Sources */,
 				1F45DE182B98340300AE2617 /* ContentView.swift in Sources */,
 				1F45DE162B98340300AE2617 /* soda_music_swiftuiApp.swift in Sources */,

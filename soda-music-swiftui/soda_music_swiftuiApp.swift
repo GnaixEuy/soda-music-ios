@@ -11,7 +11,7 @@ import SwiftUI
 struct soda_music_swiftuiApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(selectPageView: .constant(SelectPageEnum.account))
         }
     }
 }

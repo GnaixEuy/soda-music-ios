@@ -7,6 +7,12 @@
 
 import SwiftUI
 
+enum SelectPageEnum {
+    case home
+    case find
+    case account
+}
+
 struct Tabbar: View {
     var body: some View {
         HStack {
@@ -35,7 +41,7 @@ struct Tabbar: View {
         }
         .foregroundColor(.gray)
         .padding()
-        .background(.black)
+        .background(Color("SecondaryColor"))
     }
 }
 
