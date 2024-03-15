@@ -9,11 +9,10 @@ import SwiftUI
 
 struct PhoneLoginView: View {
     @Binding var phonLoginViewShow: Bool
-
+    @Binding var agreeAgreement: Bool
     @State var verificationViewShow: Bool = false
-
-    @State private var agreeAgreement: Bool = false
-
+    @State private var showProtocolAlert: Bool = false
+    @State private var phoneNumberExceptionAlert: Bool = false
     @State private var phoneNumber: String = ""
 
     var body: some View {
@@ -57,18 +56,35 @@ struct PhoneLoginView: View {
                     .frame(height: 90)
 
                 HStack {
+                    // TODO: 优化项
+                    Text("+ 86")
+                        .font(.title3)
+                        .overlay(Rectangle().frame(height: 2).padding(.top, 5), alignment: .bottom)
+
                     TextField("请输入手机号", text: $phoneNumber)
-                        .padding(.horizontal, 20.0)
-                        .padding(.vertical, 35.0)
+
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .textContentType(.telephoneNumber)
+                        .keyboardType(.asciiCapableNumberPad)
                 }
+                .padding(.horizontal, 20.0)
+                .padding(.vertical, 35.0)
 
                 NavigationLink(destination: VerificationCodeView(phoneNumber: self.$phoneNumber), isActive: $verificationViewShow) {
                     EmptyView()
                 }
 
                 Button {
-                    self.verificationViewShow.toggle()
+                    if !self.isValidPhoneNumber(self.phoneNumber) || self.phoneNumber.isEmpty {
+                        self.phoneNumberExceptionAlert.toggle()
+                    } else {
+                        if self.agreeAgreement {
+                            self.verificationViewShow.toggle()
+                        } else {
+                            self.showProtocolAlert.toggle()
+                        }
+                    }
+
                 } label: {
                     Text("获取短信验证码")
                         .foregroundColor(.white)
@@ -96,9 +112,24 @@ struct PhoneLoginView: View {
                 Spacer()
             }
         })
+        .alert(isPresented: Binding<Bool>(
+            get: { self.showProtocolAlert || self.phoneNumberExceptionAlert },
+            set: { _ in })) {
+                if phoneNumberExceptionAlert {
+                    return Alert(title: Text("警告"), message: Text("请输入合法的手机号码"), dismissButton: .default(Text("确定")))
+                } else {
+                    return Alert(title: Text("提示"), message: Text("请同意服务协议后以获取短信验证码"), dismissButton: .default(Text("确定")))
+                }
+        }
+    }
+
+    private func isValidPhoneNumber(_ phoneNumber: String) -> Bool {
+        let phoneRegex = "^1[3456789]\\d{9}$" // 匹配中国大陆手机号码
+        let predicate = NSPredicate(format: "SELF MATCHES %@", phoneRegex)
+        return predicate.evaluate(with: phoneNumber)
     }
 }
 
 #Preview {
-    PhoneLoginView(phonLoginViewShow: .constant(false))
+    PhoneLoginView(phonLoginViewShow: .constant(false), agreeAgreement: .constant(false))
 }

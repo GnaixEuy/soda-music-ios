@@ -13,21 +13,6 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-//            VStack {
-//                Button(action: {
-//                    self.isLoginUser.toggle()
-//                }, label: {
-//                    Image(systemName: "music.note")
-//                        .imageScale(.large)
-//                        .foregroundColor(.red)
-//                        .symbolRenderingMode(.multicolor)
-//                    Text("Hello, Soda!")
-//
-//                })
-//            }
-//            .foregroundColor(.red)
-//            .padding()
-
             switch selectPageView {
             case SelectPageEnum.home:
                 EmptyView()
@@ -39,10 +24,10 @@ struct ContentView: View {
 
             Spacer()
 
-            Tabbar()
+            Tabbar(selectPageView: self.$selectPageView)
         }
         .background(Color("AccentColor"))
-        .sheet(isPresented: self.$isLoginUser, content: {
+        .sheet(isPresented: .constant(!self.isLoginUser), content: {
             LoginView(isLoginUser: $isLoginUser)
         })
     }

@@ -1,0 +1,24 @@
+{
+  "originHash" : "56ac72d79b76d999e5c9cb89abbb3a510223877fd3adc5a574d189d2738e5374",
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "723fa5a6c65812aec4a0d7cc432ee198883b6e00",
+        "version" : "5.9.0"
+      }
+    },
+    {
+      "identity" : "lightnetwork",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lengain/LightNetwork.git",
+      "state" : {
+        "revision" : "71180f8e27297ebd20d2ef0e6f08f1a79740fae5",
+        "version" : "1.0.1"
+      }
+    }
+  ],
+  "version" : 3
+}

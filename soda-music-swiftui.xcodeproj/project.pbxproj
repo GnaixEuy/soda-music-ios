@@ -158,6 +158,9 @@
 				Base,
 			);
 			mainGroup = 1F45DE092B98340300AE2617;
+			packageReferences = (
+				1FA15BC42BA48C7D00707E04 /* XCRemoteSwiftPackageReference "LightNetwork" */,
+			);
 			productRefGroup = 1F45DE132B98340300AE2617 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -396,6 +399,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1FA15BC42BA48C7D00707E04 /* XCRemoteSwiftPackageReference "LightNetwork" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lengain/LightNetwork.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 1F45DE0A2B98340300AE2617 /* Project object */;
 }

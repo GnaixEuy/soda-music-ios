@@ -14,28 +14,44 @@ enum SelectPageEnum {
 }
 
 struct Tabbar: View {
+    @Binding var selectPageView: SelectPageEnum
+
     var body: some View {
         HStack {
             Spacer()
                 .frame(width: 30)
-            VStack {
-                Image(systemName: "headphones.circle")
-                    .foregroundStyle(.white)
-                    .imageScale(.large)
-                Text("发现")
-            }
+
+            Button(action: {
+                self.selectPageView = SelectPageEnum.find
+            }, label: {
+                VStack {
+                    Image(systemName: "headphones.circle")
+                        .foregroundStyle(.white)
+                        .imageScale(.large)
+                    Text("发现")
+                }
+            })
+
             Spacer()
+
             Image(systemName: "play.circle")
                 .imageScale(.large)
                 .foregroundStyle(.white)
                 .font(.system(size: 30)) // 调整图标大小
+
             Spacer()
-            VStack {
-                Image(systemName: "person")
-                    .foregroundStyle(.white)
-                    .imageScale(.large)
-                Text("我的")
-            }
+
+            Button(action: {
+                self.selectPageView = SelectPageEnum.account
+            }, label: {
+                VStack {
+                    Image(systemName: "person")
+                        .foregroundStyle(.white)
+                        .imageScale(.large)
+                    Text("我的")
+                }
+            })
+
             Spacer()
                 .frame(width: 30)
         }
@@ -46,5 +62,5 @@ struct Tabbar: View {
 }
 
 #Preview {
-    Tabbar()
+    Tabbar(selectPageView: .constant(SelectPageEnum.account))
 }

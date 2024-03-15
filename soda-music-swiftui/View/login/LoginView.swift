@@ -9,10 +9,8 @@ import SwiftUI
 
 struct LoginView: View {
     @Binding var isLoginUser: Bool
-
+    @State var agreeAgreement: Bool = false
     @State private var phoneLoginViewShow: Bool = false
-
-    @State private var agreeAgreement: Bool = false
 
     var body: some View {
         VStack {
@@ -28,8 +26,12 @@ struct LoginView: View {
 
                 Spacer()
 
-                Text("帮助与设置")
-                    .padding()
+                Button(action: {
+                    print("设置界面还没做")
+                }, label: {
+                    Text("帮助与设置")
+                })
+                .padding()
             }
 
             Spacer()
@@ -43,7 +45,7 @@ struct LoginView: View {
                 Button {
                     print("")
                 } label: {
-                    Text("一键登录抖音账号")
+                    Text("一键登录抖音账号 ❌")
                         .foregroundColor(.white)
                 }
                 .padding()
@@ -57,7 +59,7 @@ struct LoginView: View {
                 Button {
                     self.phoneLoginViewShow.toggle()
                 } label: {
-                    Text("手机号登录")
+                    Text("手机号登录✅")
                         .foregroundColor(.white)
                 }
                 .padding()
@@ -85,7 +87,7 @@ struct LoginView: View {
             }
         }
         .sheet(isPresented: self.$phoneLoginViewShow, content: {
-            PhoneLoginView(phonLoginViewShow: self.$phoneLoginViewShow)
+            PhoneLoginView(phonLoginViewShow: self.$phoneLoginViewShow, agreeAgreement: self.$agreeAgreement)
         })
     }
 }
