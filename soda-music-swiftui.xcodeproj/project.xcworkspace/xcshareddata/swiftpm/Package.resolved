@@ -1,22 +1,13 @@
 {
-  "originHash" : "56ac72d79b76d999e5c9cb89abbb3a510223877fd3adc5a574d189d2738e5374",
+  "originHash" : "dca1bb652e0d9ebc5bcc00bf64783cc4a2f5ebf9561cd909e9e5207f62eb1350",
   "pins" : [
     {
-      "identity" : "alamofire",
+      "identity" : "swift-request",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "location" : "https://github.com/carson-katri/swift-request.git",
       "state" : {
-        "revision" : "723fa5a6c65812aec4a0d7cc432ee198883b6e00",
-        "version" : "5.9.0"
-      }
-    },
-    {
-      "identity" : "lightnetwork",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/lengain/LightNetwork.git",
-      "state" : {
-        "revision" : "71180f8e27297ebd20d2ef0e6f08f1a79740fae5",
-        "version" : "1.0.1"
+        "revision" : "6266d884d7ded618cceb0e0920431be4d6f4c4aa",
+        "version" : "1.4.0"
       }
     }
   ],

@@ -79,7 +79,9 @@ struct PhoneLoginView: View {
                         self.phoneNumberExceptionAlert.toggle()
                     } else {
                         if self.agreeAgreement {
-                            self.verificationViewShow.toggle()
+                            if self.sendPhoneCaptcha(self.phoneNumber) {
+                                self.verificationViewShow.toggle()
+                            }
                         } else {
                             self.showProtocolAlert.toggle()
                         }
@@ -128,8 +130,18 @@ struct PhoneLoginView: View {
         let predicate = NSPredicate(format: "SELF MATCHES %@", phoneRegex)
         return predicate.evaluate(with: phoneNumber)
     }
+
+    private func sendPhoneCaptcha(_ phoneNumber: String) -> Bool {
+        NetworkManager.shared.request(module: .auth, api: AuthAPI.getVerificationCode, parameters: ["phone": self.phoneNumber]) { data, response, error in
+            print(data as Any)
+            print(response as Any)
+            print(error as Any)
+        }
+        return true
+    }
 }
 
 #Preview {
-    PhoneLoginView(phonLoginViewShow: .constant(false), agreeAgreement: .constant(false))
+    LoginView(isLoginUser: .constant(false))
+//    PhoneLoginView(phonLoginViewShow: .constant(false), agreeAgreement: .constant(false))
 }

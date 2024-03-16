@@ -9,9 +9,6 @@ import SwiftUI
 
 @main
 struct soda_music_swiftuiApp: App {
-    var config = LNNetworkConfiguration(baseURL: URL(string: "http://example.com/"))
-    LNNetworkManager.default.configuration = config
-
     var body: some Scene {
         WindowGroup {
             ContentView(selectPageView: .constant(SelectPageEnum.account))

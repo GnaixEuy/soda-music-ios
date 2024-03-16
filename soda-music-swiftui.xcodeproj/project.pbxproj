@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F1B034B2BA5F2CA00FAAA48 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B034A2BA5F2CA00FAAA48 /* HttpRequest.swift */; };
+		1F1B034E2BA5F6E000FAAA48 /* Json in Frameworks */ = {isa = PBXBuildFile; productRef = 1F1B034D2BA5F6E000FAAA48 /* Json */; };
+		1F1B03502BA5F6E000FAAA48 /* Request in Frameworks */ = {isa = PBXBuildFile; productRef = 1F1B034F2BA5F6E000FAAA48 /* Request */; };
 		1F45DE162B98340300AE2617 /* soda_music_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE152B98340300AE2617 /* soda_music_swiftuiApp.swift */; };
 		1F45DE182B98340300AE2617 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE172B98340300AE2617 /* ContentView.swift */; };
 		1F45DE1A2B98340400AE2617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE192B98340400AE2617 /* Assets.xcassets */; };
@@ -19,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F1B034A2BA5F2CA00FAAA48 /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
 		1F45DE122B98340300AE2617 /* soda-music-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "soda-music-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F45DE152B98340300AE2617 /* soda_music_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soda_music_swiftuiApp.swift; sourceTree = "<group>"; };
 		1F45DE172B98340300AE2617 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,12 +40,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F1B03502BA5F6E000FAAA48 /* Request in Frameworks */,
+				1F1B034E2BA5F6E000FAAA48 /* Json in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F1B03492BA5F2B700FAAA48 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				1F1B034A2BA5F2CA00FAAA48 /* HttpRequest.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
 		1F45DE092B98340300AE2617 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +75,7 @@
 		1F45DE142B98340300AE2617 /* soda-music-swiftui */ = {
 			isa = PBXGroup;
 			children = (
+				1F1B03492BA5F2B700FAAA48 /* Api */,
 				1F45DE252B986DE000AE2617 /* View */,
 				1F45DE152B98340300AE2617 /* soda_music_swiftuiApp.swift */,
 				1F45DE172B98340300AE2617 /* ContentView.swift */,
@@ -130,6 +145,10 @@
 			dependencies = (
 			);
 			name = "soda-music-swiftui";
+			packageProductDependencies = (
+				1F1B034D2BA5F6E000FAAA48 /* Json */,
+				1F1B034F2BA5F6E000FAAA48 /* Request */,
+			);
 			productName = "soda-music-swiftui";
 			productReference = 1F45DE122B98340300AE2617 /* soda-music-swiftui.app */;
 			productType = "com.apple.product-type.application";
@@ -159,7 +178,7 @@
 			);
 			mainGroup = 1F45DE092B98340300AE2617;
 			packageReferences = (
-				1FA15BC42BA48C7D00707E04 /* XCRemoteSwiftPackageReference "LightNetwork" */,
+				1F1B034C2BA5F6E000FAAA48 /* XCRemoteSwiftPackageReference "swift-request" */,
 			);
 			productRefGroup = 1F45DE132B98340300AE2617 /* Products */;
 			projectDirPath = "";
@@ -192,6 +211,7 @@
 				1F55CFB12B988963002B8460 /* PhoneLoginView.swift in Sources */,
 				1F55CFAE2B9888E8002B8460 /* AccountView.swift in Sources */,
 				1F45DE242B986DD500AE2617 /* Tabbar.swift in Sources */,
+				1F1B034B2BA5F2CA00FAAA48 /* HttpRequest.swift in Sources */,
 				1F45DE182B98340300AE2617 /* ContentView.swift in Sources */,
 				1F45DE162B98340300AE2617 /* soda_music_swiftuiApp.swift in Sources */,
 			);
@@ -401,15 +421,28 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1FA15BC42BA48C7D00707E04 /* XCRemoteSwiftPackageReference "LightNetwork" */ = {
+		1F1B034C2BA5F6E000FAAA48 /* XCRemoteSwiftPackageReference "swift-request" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/lengain/LightNetwork.git";
+			repositoryURL = "https://github.com/carson-katri/swift-request.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.1;
+				minimumVersion = 1.4.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1F1B034D2BA5F6E000FAAA48 /* Json */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F1B034C2BA5F6E000FAAA48 /* XCRemoteSwiftPackageReference "swift-request" */;
+			productName = Json;
+		};
+		1F1B034F2BA5F6E000FAAA48 /* Request */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F1B034C2BA5F6E000FAAA48 /* XCRemoteSwiftPackageReference "swift-request" */;
+			productName = Request;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1F45DE0A2B98340300AE2617 /* Project object */;
 }
